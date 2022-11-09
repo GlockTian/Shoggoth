@@ -1,0 +1,49 @@
+{
+  "statuses":[
+    {
+      "name": "力量",
+      "label": "STR",
+      "initial": 10
+    },
+    {
+      "name": "体质",
+      "label": "CON",
+      "initial": 10
+    },
+    {
+      "name": "体型",
+      "label": "SIZ",
+      "initial": 10
+    },
+    {
+      "name": "敏捷",
+      "label": "DEX",
+      "initial": 10
+    },
+    {
+      "name": "外貌",
+      "label": "APP",
+      "initial": 10
+    },
+    {
+      "name": "智力",
+      "label": "INT",
+      "initial": 10
+    },
+    {
+      "name": "意志",
+      "label": "POW",
+      "initial": 10
+    },
+    {
+      "name": "教育",
+      "label": "EDU",
+      "initial": 10
+    },
+    {
+      "name": "SAN值",
+      "label": "SAN",
+      "initial": 10
+    }
+  ]
+}
