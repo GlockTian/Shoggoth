@@ -2,7 +2,6 @@ import Link from 'next/link'
 import dbConnect from '../util/dbConnect'
 import character from '../model/character'
 import Image from 'next/image'
-
 interface Character {
   _id: string
   name: string
@@ -16,7 +15,7 @@ const Index = ({ characters} : { characters: Character[] }) =>
     {characters.map((character) => (
       <div key={character._id}>
         <div className="card">
-          <img src={character.image_url} alt={character.name} width={200} height={200} />
+          <img src={character.image_url} alt={character.name}/>
           <h5 className="character-name">{character.name}</h5>
           <div className="main-content">
             <p className="character-name">{character.name}</p>

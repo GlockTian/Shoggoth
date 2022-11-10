@@ -3,7 +3,7 @@ import { useRouter } from 'next/router'
 import Link from 'next/link'
 import dbConnect from '../../util/dbConnect'
 import  Character, {ICharacter} from '../../model/character'
-import { GetServerSideProps, GetServerSidePropsContext } from 'next'
+import { Button } from '@mantine/core';
 
 /* Allows you to view character card info and delete character card*/
 const CharacterPage = ({ character }: { character: ICharacter }) => {
@@ -51,7 +51,7 @@ const CharacterPage = ({ character }: { character: ICharacter }) => {
 
           <div className="btn-container">
             <Link href="/[id]/edit" as={`/${character._id}/edit`} legacyBehavior>
-              <button className="btn edit">Edit</button>
+              <Button className="btn edit">Edit</Button>
             </Link>
             <button className="btn delete" onClick={handleDelete}>
               Delete
