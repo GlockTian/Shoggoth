@@ -29,3 +29,5 @@ function checkPointResult(point: number): { res: Result; dice: number } {
     }
   }
 }
+
+export { Result, rollDice, checkPoint, checkPointResult };
