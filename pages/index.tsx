@@ -2,6 +2,7 @@ import Link from "next/link";
 import dbConnect from "../util/dbConnect";
 import Character from "../model/character";
 import Image from "next/image";
+import {Button} from "@mantine/core";
 interface Character {
   _id: string;
   name: string;
@@ -26,10 +27,10 @@ const Index = ({ characters }: { characters: Character[] }) => (
                 as={`/${character._id}/edit`}
                 legacyBehavior
               >
-                <button className="btn edit">Edit</button>
+                <Button >Edit</Button>
               </Link>
               <Link href="/[id]" as={`/${character._id}`} legacyBehavior>
-                <button className="btn view">View</button>
+                <Button >View</Button>
               </Link>
             </div>
           </div>

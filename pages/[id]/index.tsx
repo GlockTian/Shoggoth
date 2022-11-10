@@ -51,11 +51,11 @@ const CharacterPage = ({ character }: { character: ICharacter }) => {
 
           <div className="btn-container">
             <Link href="/[id]/edit" as={`/${character._id}/edit`} legacyBehavior>
-              <Button className="btn edit">Edit</Button>
+              <Button >Edit</Button>
             </Link>
-            <button className="btn delete" onClick={handleDelete}>
+            <Button onClick={handleDelete}>
               Delete
-            </button>
+            </Button>
           </div>
         </div>
       </div>
